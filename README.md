@@ -1,11 +1,6 @@
-# Lief en Leed — Community Support Website
+# Lief en Leed — 
 
 A responsive static website for the fictional non-profit *Lief en Leed*, built with HTML, CSS and JavaScript.
-
-## Live demo
-This repository is ready to publish with GitHub Pages. After you create a repository named `LiefEnLeed` under the GitHub user **kcleophas**, enable Pages in repository settings and the site will be available at:
-
-https://kcleophas.github.io/LiefEnLeed/
 
 ## Features
 - Responsive layout using CSS, colour scheme: honey yellow (#F6C85F) and sky blue (#7EC8E3).
