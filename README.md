@@ -1,4 +1,4 @@
-# Lief en Leed — 
+# Lief en Leed 
 
 A responsive static website for the fictional non-profit *Lief en Leed*, built with HTML, CSS and JavaScript.
 
