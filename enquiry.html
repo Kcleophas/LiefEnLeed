@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Enquiry — Lief en Leed</title>
+  <meta name="description" content="Enquire about volunteering, sponsorship or services from Lief en Leed." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">Lief en Leed</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="card">
+      <h1>Enquiry</h1>
+      <p>Use this form to enquire about volunteering, sponsorship or services. After validation you'll see a response related to availability and cost.</p>
+
+      <form class="validate" action="/submit-enquiry" method="POST" data-mailto="liefenleed@gmail.com" data-subject="Enquiry: Lief en Leed">
+        <label>
+          Full name
+          <input type="text" name="name" required minlength="2" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Enquiry type
+          <select name="type" required>
+            <option value="">-- choose --</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="sponsor">Sponsorship</option>
+            <option value="service">Service information</option>
+          </select>
+        </label>
+
+        <label>
+          Short message
+          <textarea name="message" maxlength="500"></textarea>
+        </label>
+
+        <button type="submit">Check availability / Cost</button>
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lief en Leed</p>
+  </footer>
+
+  <script src="js/forms.js" defer></script>
+</body>
+</html>

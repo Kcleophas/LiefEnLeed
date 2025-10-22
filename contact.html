@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Lief en Leed</title>
+  <meta name="description" content="Contact Lief en Leed for general enquiries, support or media queries." />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">Lief en Leed</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="card">
+      <h1>Contact</h1>
+      <p>Send us a message and we'll get back to you as soon as possible.</p>
+
+      <div id="map" style="height:300px;margin-bottom:12px;"></div>
+
+      <form class="validate" action="/submit-contact" method="POST" data-mailto="liefenleed@gmail.com" data-subject="Contact via website">
+        <label>
+          Full name
+          <input type="text" name="name" required minlength="2" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" required minlength="10"></textarea>
+        </label>
+
+        <button type="submit">Send message</button>
+      </form>
+    </article>
+    <aside class="card">
+      <h2>Our details</h2>
+      <p><strong>Location:</strong> Mamre</p>
+      <p><strong>Email:</strong> <a href="mailto:liefenleed@gmail.com">liefenleed@gmail.com</a></p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lief en Leed</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/forms.js" defer></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize map (approx coordinates for Mamre, South Africa)
+    try {
+      const map = L.map('map').setView([-33.5, 18.4], 10);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap contributors'
+      }).addTo(map);
+      L.marker([-33.5, 18.4]).addTo(map).bindPopup('Lief en Leed - Mamre');
+    } catch (e) {
+      console.warn('Leaflet map load failed', e);
+    }
+  });
+  </script>
+</body>
+</html>
