@@ -1,14 +1,15 @@
-# Lief en Leed 
+# Lief en Leed - Community Organisation Website
+This repository contains the front-end source code for the **Lief en Leed** website.  
+The organisation was founded in 1986 in Mamre with the purpose of supporting and empowering disabled community members.
 
-A responsive static website for the fictional non-profit *Lief en Leed*, built with HTML, CSS and JavaScript.
-
-## Features
+# Features
 - Responsive layout using CSS, colour scheme: honey yellow (#F6C85F) and sky blue (#7EC8E3).
 - Enquiry and Contact forms with client-side validation and mailto fallback.
 - Dynamic events list loaded from `data/posts.json`.
 - Interactive map (Leaflet + OpenStreetMap).
 - SEO files: `robots.txt` and `sitemap.xml`.
 - Accessibility best practices: alt text, semantic HTML, readable contrast.
+- Full respsonsive website
 
 ## Run locally
 1. `git clone https://github.com/kcleophas/LiefEnLeed.git`
@@ -17,7 +18,3 @@ A responsive static website for the fictional non-profit *Lief en Leed*, built w
 
 ## Changelog
 See `changelog.md`.
-
-## Screenshots
-Add screenshots to `images/` and reference them here:
-![Homepage](images/screenshot-home.png)
