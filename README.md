@@ -19,7 +19,7 @@ The organisation was founded in 1986 in Mamre with the purpose of supporting and
 
 ### 🗺️ Contact Page Map
 ## Run locally
-1. `git clone https://github.com/kcleophas/LiefEnLeed.git`
+1. `git clone https://github.com/Kcleophas/LiefEnLeed.git`
 2. Open the project in VS Code.
 3. Right-click `index.html` → `Open with Live Server` (recommended).
 
