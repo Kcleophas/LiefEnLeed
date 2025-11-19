@@ -33,3 +33,44 @@ All notable changes to the **Lief en Leed** will be documented here.
 - Logo and navigation bar  
 - Initial CSS theme  
 - Background image and layout framework  
+
+
+
+## [1.0.3] — 2025-11-19
+### Added
+- Centered all HTML page content using CSS
+- Added improved director photo with border and shadow
+- Added soft darkened yellow–blue gradient background
+
+### Updated
+- Updated all email addresses across HTML pages
+- Updated README.md with full project description
+
+### Fixed
+- Fixed Leaflet map not displaying on Contact page
+- Fixed duplicated stylesheet reference in Contact.html
+
+---
+
+## [1.0.2] — 2025-11-19
+### Added
+- Contact page with Leaflet.js map
+- Enquiry form with validation
+
+### Updated
+- Navigation links across all pages
+
+---
+
+## [1.0.1] — 2025-11-19
+### Added
+- Initial project structure: index, about, enquiry, contact
+- Logo and branding assets
+- Base CSS layout
+
+---
+
+## [1.0.0] — 2025-11-19
+### Created
+- Repository created on GitHub  
+- Initial commit
